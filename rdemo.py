@@ -1,7 +1,9 @@
 import requests
 
 # payload = {'username': 'Ajmal', 'password': 'testing'}
-r = requests.post('https://httpbin.org/post')
+r = requests.post('https://httpbin.org/basic-auth/corey/testing', auth=('corey', 'testing'))
+
+print(r)
 
 
 
